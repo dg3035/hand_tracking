@@ -86,9 +86,7 @@ class HandTracker():
     
     @staticmethod
     def _im_normalize(img):
-         return np.ascontiguousarray(
-             2 * ((img / 255) - 0.5
-        ).astype('float32'))
+         return np.ascontiguousarray(((img / 255)).astype('float32'))
        
     @staticmethod
     def _sigm(x):
